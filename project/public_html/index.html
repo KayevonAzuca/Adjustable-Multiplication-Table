@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/png" href="images/icons/favicon.png">
+  <script src="assets/js/main.js" type="module"></script>
+  <title>TBD Math | Multiplication Table</title>
+  <style id="colHighlight"></style>
+</head>
+<body class="tbd">
+  <header class="tbd__header">
+    <div class="banner">
+      <div class="banner__logo">
+        <a class="banner__link" href="index.html">
+          <img class="banner__pic" src="images/banner/logo.png" alt="Website logo of an abacus."></img>
+        </a>
+      </div>
+      <div class="banner__title">
+        <span class="banner__text">To Be Determined Math</span>
+      </div>
+    </div>
+  </header>
+  <main class="tbd__main">
+    <header class="showcase showcase__header">
+      <h1 class="title">
+        <span class="title__text">Create Your Own Multiplication Table</span>
+      </h1>
+    </header>
+    <article class="showcase">
+      <section class="content">
+        <div class="famt" id="famt">
+          <div class="famt__container famt__container--input">
+            <div class="famt__interface">
+              <h3 class="famt__title">Settings</h3>
+              <form class="famt__form" id="famtForm" method="GET">
+                <fieldset class="famt__fieldset famt__fieldset--calc">
+                  <legend class="famt__legend">Calculations</legend>
+                  <span class="famt__content">
+                    <label class="famt__label famt__label--js js-rdo" id="famtLabelJS">
+                      <h4 class="famt__title famt__title--sub">My device</h4>
+                      <input class="famt__input" id="myDevice" type="radio" name="rdoCalcDevice" value="client" checked>
+                    </label>
+                    <label class="famt__label famt__label--php" id="famtLabelPHP">
+                      <h4 class="famt__title famt__title--sub">Server</h4>
+                      <input class="famt__input" id="yourServer" type="radio" name="rdoCalcDevice" value="server">
+                    </label>
+                    <label class="famt__label dne">
+                      <h4 class="famt__title famt__title--sub dne">Message</h4>
+                      <input class="famt__input dne" type="text" name="msg" placeholder="Enter your message" value="" hidden>
+                    </label>
+                    <div class="famt__help">
+                      <h4 class="famt__title famt__title--sub">What is this?</h4>
+                      <img class="famt__pic" src="images/icons/info.png" alt="Information help">
+                      <p class="famt__paragraph famt__paragraph--hint">
+                        <span class="famt__text famt__text--title">My device:</span><br>Use your device's processor to
+                        create and display the desired table.<br><span class="text-bold">[Range limit:
+                          25]</span><br><br>
+                        <span class="famt__text famt__text--title">Your server:</span><br>Use the server to create
+                        multiplication table and send it to your device to display.<br><span class="text-bold">[Range
+                          limit: 50] [Recommended for Mobile]</span>
+                      </p>
+                    </div>
+                  </span>
+                </fieldset>
+                <fieldset class="famt__fieldset">
+                  <legend class="famt__legend">Table Length</legend>
+                  <table class="famt__table famt__table--input">
+                    <thead class="famt__thead">
+                      <tr class="famt__tr">
+                        <td class="famt__td"></td>
+                        <td class="famt__td"></td>
+                        <th class="famt__th">
+                          <label class="famt__label" for="colStart"><span class="famt__text famt__text--title">Column<br>Start:</span></label>
+                        </th>
+                        <td class="famt__td"></td>
+                        <th class="famt__th">
+                          <label class="famt__label" for="colEnd"><span class="famt__text famt__text--title">Column<br>End:</span></label>
+                        </th>
+                      </tr>
+                      <tr class="famt__tr">
+                        <td class="famt__td"></td>
+                        <td class="famt__td famt__td--inner"></td>
+                        <td class="famt__td famt__td--inner">
+                          <input class="famt__input" type="text" name="colStart" id="colStart" value="1">
+                        </td>
+                        <td class="famt__td famt__td--inner">
+                          <span class="famt__text">...</span>
+                        </td>
+                        <td class="famt__td famt__td--inner">
+                          <input class="famt__input" type="text" name="colEnd" id="colEnd" value="12">
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody class="famt__tbody">
+                      <tr class="famt__tr">
+                        <th class="famt__th">
+                          <label class="famt__label" for="rowStart"><span class="famt__text famt__text--title">Row<br>Start:</span></label>
+                        </th>
+                        <td class="famt__td famt__td--inner">
+                          <input class="famt__input" type="text" name="rowStart" id="rowStart" value="1">
+                        </td>
+                        <td class="famt__td famt__td--inner"><span class="famt__text">...</span></td>
+                        <td class="famt__td famt__td--inner"><span class="famt__text">...</span></td>
+                        <td class="famt__td famt__td--inner"><span class="famt__text">...</span></td>
+                      </tr>
+                      <tr class="famt__tr">
+                        <td class="famt__td"></td>
+                        <td class="famt__td famt__td--inner">...</td>
+                        <td class="famt__td famt__td--inner"><span class="famt__text">...</span></td>
+                        <td class="famt__td famt__td--inner"><span class="famt__text">...</span></td>
+                        <td class="famt__td famt__td--inner"><span class="famt__text">...</span></td>
+                      </tr>
+                      <tr class="famt__tr">
+                        <th class="famt__th">
+                          <label class="famt__label" for="rowEnd"><span class="famt__text famt__text--title">Row<br>End:</span></label>
+                        </th>
+                        <td class="famt__td famt__td--inner">
+                          <input class="famt__input" type="text" name="rowEnd" id="rowEnd" value="12">
+                        </td>
+                        <td class="famt__td famt__td--inner"><span class="famt__text">...</span></td>
+                        <td class="famt__td famt__td--inner"><span class="famt__text">...</span></td>
+                        <td class="famt__td famt__td--inner"><span class="famt__text">...</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </fieldset>
+                <fieldset class="famt__fieldset famt__fieldset--commit">
+                  <span class="famt__content">
+                    <input class="famt__button famt__input--reset" id="famtInputReset" type="reset" value="Reset">
+                    <input class="famt__button famt__button--submit" id="famtSubmit" name="submit" type="submit" value="Create">
+                  </span>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="famt__container famt__container--output" id="famtOutput">
+            <div class="famt__info">
+              <p class="famt__paragraph famt__paragraph--instructions">
+                Create a multiplication table by using the
+                <span class="text-underline text-bold">Settings</span>
+                panel and then clicking <span class="text-underline text-bold">Create</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="tbd__footer">
+    <div class="footnote">
+      <div class="footnote__misc">
+        <span class="footnote__text">Copyright &copy; 2021, 
+          <a class="footnote__link" rel="nofollow" target="_blank" href="https://www.westwoodtechdevelopments.com">WestwoodTechDevelopments</a> All Rights Reserved&ensp;|&ensp;</span>
+        <span class="footnote__text">Developer: Kayevon Azuca&ensp;|&ensp;</span>
+        <span class="footnote__text">To Be Determined Math</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
