@@ -208,7 +208,6 @@
     $colCounter = 1;
     $rowCounter = 1;
 
-    $res['data'] .= '<table id="famtTableOutput" class="famt__table famt__table--output">';
     $res['data'] .= '<thead class="famt__thead"><tr id="tr" class="famt__tr">';
     $res['data'] .= '<th class="famt__th row' . $rowCounter . 
       ' col' . $colCounter . ' famt--php">Server</th>';
@@ -284,7 +283,6 @@
         $res['data'] .= '</tr>';
       } // end of for()
       $res['data'] .= '</tbody>';
-      $res['data'] .= '</table>';
     } // end of else{}
 
     // ==== Send Back Results  ================================================

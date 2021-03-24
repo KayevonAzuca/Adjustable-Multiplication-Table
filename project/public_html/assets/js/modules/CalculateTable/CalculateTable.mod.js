@@ -353,10 +353,11 @@ async function createTableJS(colStart, colEnd, rowStart, rowEnd){
 // ============================================================================
 async function createTablePHP(){
   try {
+    clearOutput();
     let form = new FormData(formEl);
     form.append('jsValid', true);
 
-    let res = await fetch("assets/php/handle/CalculateTable.han.php", {
+    let res = await fetch("/assets/php/handle/Adjustable-Multiplication-Table/CalculateTable.han.php", {
       method: 'POST',
       body: form,
       headers: {
@@ -364,7 +365,7 @@ async function createTablePHP(){
       },
     });
 
-    if(res.status !== 200){
+    if(res.status !== 200 || !res.ok){
       throw new Error("Server response error");
     }
 
@@ -372,10 +373,16 @@ async function createTablePHP(){
 
     if(data['errMsg'].length > 0){
       dispErr(data['errMsg']);
-      return false
+      return false;
     }
 
-    outputEl.innerHTML = data['data'];
+    let tableEl = mkEl('TABLE', {'id':'famtTableOutput','class':'famt__table famt__table--output'});
+
+    tableEl.addEventListener("mouseover", dispColHighlight, false);
+    tableEl.addEventListener("mouseleave", hideColHighlight, false);
+
+    tableEl.innerHTML = data['data'];
+    outputEl.appendChild(tableEl);
     return true;
 
   } catch(e){
