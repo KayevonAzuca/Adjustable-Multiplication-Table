@@ -18,43 +18,43 @@
 			"desktop": [
 				{
 					"imgAlt": "Website's front page",
-					"imgPath": "/portfolio/images/desktop/home.jpeg"
+					"imgPath": "/images/wtd_portfolio/images/desktop/home.jpeg"
 				},
 				{
 					"imgAlt": "Example of a 12 by 12 multiplication table",
-					"imgPath": "/portfolio/images/desktop/12x12.jpeg"
+					"imgPath": "/images/wtd_portfolio/images/desktop/12x12.jpeg"
 				},
 				{
 					"imgAlt": "Example of a unique multiplication table using negative and decimal numbers",
-					"imgPath": "/portfolio/images/desktop/unique-table.jpeg"
+					"imgPath": "/images/wtd_portfolio/images/desktop/unique-table.jpeg"
 				}
 			],
 			"tablet": [
 				{
 					"imgAlt": "Website's front page",
-					"imgPath": "/portfolio/images/tablet/home.jpeg"
+					"imgPath": "/images/wtd_portfolio/images/tablet/home.jpeg"
 				},
 				{
 					"imgAlt": "Example of a 12 by 12 multiplication table",
-					"imgPath": "/portfolio/images/tablet/12x12.jpeg"
+					"imgPath": "/images/wtd_portfolio/images/tablet/12x12.jpeg"
 				},
 				{
 					"imgAlt": "Example of a unique multiplication table using negative and decimal numbers",
-					"imgPath": "/portfolio/images/tablet/unique-table.jpeg"
+					"imgPath": "/images/wtd_portfolio/images/tablet/unique-table.jpeg"
 				}
 			],
 			"phone": [
 				{
 					"imgAlt": "Website's front page",
-					"imgPath": "/portfolio/images/phone/home.jpeg"
+					"imgPath": "/images/wtd_portfolio/images/phone/home.jpeg"
 				},
 				{
 					"imgAlt": "Example of a 12 by 12 multiplication table",
-					"imgPath": "/portfolio/images/phone/12x12.jpeg"
+					"imgPath": "/images/wtd_portfolio/images/phone/12x12.jpeg"
 				},
 				{
 					"imgAlt": "Example of a unique multiplication table using negative and decimal numbers",
-					"imgPath": "/portfolio/images/phone/unique-table.jpeg"
+					"imgPath": "/images/wtd_portfolio/images/phone/unique-table.jpeg"
 				}
 			]
 		}
