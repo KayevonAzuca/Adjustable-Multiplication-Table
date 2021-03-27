@@ -1,75 +1,75 @@
 {
-	"category": {
-		"override": true,
-		"data": "Web Development",
+  "category": {
+    "override": true,
+    "data": "Web Development",
     "indexFile": "index.html"
-	},
+  },
     "precedence":{
         "override": true,
         "data": 8
     },
-	"title": {
-		"override": true,
-		"data": "Adjustable Multiplication Table"
-	},
+  "title": {
+    "override": true,
+    "data": "Adjustable Multiplication Table"
+  },
   "urls": {
-		"override": true,
-		"data": {
+    "override": true,
+    "data": {
       "liveURL": false,
       "docsURL": {
-        "techDesignDoc": "/Architechtural Design Documents/Technical_Design_Document.pdf"
+        "techDesignDoc": "/Architectural Design Documents/Technical_Design_Document.pdf"
       }
     }
-	},
-  "resources": {
-		"override": true,
-		"data": {}
   },
-	"images": {
-		"override": true,
-		"data": {
-			"desktop": [
-				{
-					"imgAlt": "Website's front page",
-					"imgPath": "/images/wtd_portfolio/images/desktop/home.jpeg"
-				},
-				{
-					"imgAlt": "Example of a 12 by 12 multiplication table",
-					"imgPath": "/images/wtd_portfolio/images/desktop/12x12.jpeg"
-				},
-				{
-					"imgAlt": "Example of a unique multiplication table using negative and decimal numbers",
-					"imgPath": "/images/wtd_portfolio/images/desktop/unique-table.jpeg"
-				}
-			],
-			"tablet": [
-				{
-					"imgAlt": "Website's front page",
-					"imgPath": "/images/wtd_portfolio/images/tablet/home.jpeg"
-				},
-				{
-					"imgAlt": "Example of a 12 by 12 multiplication table",
-					"imgPath": "/images/wtd_portfolio/images/tablet/12x12.jpeg"
-				},
-				{
-					"imgAlt": "Example of a unique multiplication table using negative and decimal numbers",
-					"imgPath": "/images/wtd_portfolio/images/tablet/unique-table.jpeg"
-				}
-			],
-			"phone": [
-				{
-					"imgAlt": "Website's front page",
-					"imgPath": "/images/wtd_portfolio/images/phone/home.jpeg"
-				},
-				{
-					"imgAlt": "Example of a 12 by 12 multiplication table",
-					"imgPath": "/images/wtd_portfolio/images/phone/12x12.jpeg"
-				},
-				{
-					"imgAlt": "Example of a unique multiplication table using negative and decimal numbers",
-					"imgPath": "/images/wtd_portfolio/images/phone/unique-table.jpeg"
-				}
-			]
-		}
-	}
+  "resources": {
+    "override": true,
+    "data": {}
+  },
+  "images": {
+    "override": true,
+    "data": {
+      "desktop": [
+        {
+          "imgAlt": "Website's front page",
+          "imgPath": "/images/wtd_portfolio/images/desktop/home.jpeg"
+        },
+        {
+          "imgAlt": "Example of a 12 by 12 multiplication table",
+          "imgPath": "/images/wtd_portfolio/images/desktop/12x12.jpeg"
+        },
+        {
+          "imgAlt": "Example of a unique multiplication table using negative and decimal numbers",
+          "imgPath": "/images/wtd_portfolio/images/desktop/unique-table.jpeg"
+        }
+      ],
+      "tablet": [
+        {
+          "imgAlt": "Website's front page",
+          "imgPath": "/images/wtd_portfolio/images/tablet/home.jpeg"
+        },
+        {
+          "imgAlt": "Example of a 12 by 12 multiplication table",
+          "imgPath": "/images/wtd_portfolio/images/tablet/12x12.jpeg"
+        },
+        {
+          "imgAlt": "Example of a unique multiplication table using negative and decimal numbers",
+          "imgPath": "/images/wtd_portfolio/images/tablet/unique-table.jpeg"
+        }
+      ],
+      "phone": [
+        {
+          "imgAlt": "Website's front page",
+          "imgPath": "/images/wtd_portfolio/images/phone/home.jpeg"
+        },
+        {
+          "imgAlt": "Example of a 12 by 12 multiplication table",
+          "imgPath": "/images/wtd_portfolio/images/phone/12x12.jpeg"
+        },
+        {
+          "imgAlt": "Example of a unique multiplication table using negative and decimal numbers",
+          "imgPath": "/images/wtd_portfolio/images/phone/unique-table.jpeg"
+        }
+      ]
+    }
+  }
 }
